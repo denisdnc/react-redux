@@ -23,6 +23,7 @@ const mapDispatchToProps = (dispatch) => {
   return {
     addOne: () => {
       dispatch({
+        // action
         type: "ADD_ONE"
       })
     }
