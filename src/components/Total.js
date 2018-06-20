@@ -17,14 +17,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    addOne: () => {
-      dispatch({
-        type: "ADD_ONE"
-      })
-    }
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Total);
+export default connect(mapStateToProps, null)(Total);
